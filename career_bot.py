@@ -42,7 +42,7 @@ st.markdown(
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: bold;
         color: rgba(255, 255, 255, 0.9);
         text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
