@@ -1,10 +1,9 @@
-
 import streamlit as st
 import google.generativeai as genai  # Google Gemini API
 import pandas as pd  # Pandas for career Q&A data handling
 
 # ✅ Configure Gemini API
-API_KEY = ""  # Replace with your actual API key
+API_KEY = "AIzaSyC1sJ_aHUIsdVumIhkYE5pCTlecWewwhXc"  # Replace with your actual API key
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
@@ -22,7 +21,7 @@ def load_career_qa():
 
 career_qa = load_career_qa()
 
-# ✅ Apply Custom Styling with Pink and Blue Gradient Background and Opacity
+# ✅ Apply Custom Styling with Background Quote
 st.markdown(
     f"""
     <style>
@@ -32,16 +31,28 @@ st.markdown(
         position: relative;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         height: 100vh;
-        padding-left: 5%;
+        text-align: center;
     }}
-    
+
+    .background-text {{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.8);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        z-index: -1;
+    }}
+
     h1 {{
         color: white;
         text-align: center;
     }}
-    
+
     .stButton button {{
         background-color: #2575fc;
         color: white;
@@ -50,7 +61,7 @@ st.markdown(
         position: relative;
         overflow: hidden;
     }}
-    
+
     .stButton button::after {{
         content: "";
         position: absolute;
@@ -62,11 +73,12 @@ st.markdown(
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
     }}
-    
+
     .stButton button:hover::after {{
         opacity: 1;
     }}
     </style>
+    <div class="background-text">Build Your Career Now</div>
     """,
     unsafe_allow_html=True
 )
