@@ -1,5 +1,5 @@
 
-   import streamlit as st
+import streamlit as st
 import google.generativeai as genai  # Google Gemini API
 import pandas as pd  # Pandas for career Q&A data handling
 
