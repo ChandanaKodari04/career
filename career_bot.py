@@ -39,17 +39,18 @@ st.markdown(
     }}
 
     .background-text {{
-       
-        position: absolute;
-        top: 20%;
-        left: -55%;
-        font-size: 3.5rem;
-        font-weight: bold;
-        color: rgba(255, 255, 255, 0.9);
-        text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-        z-index: -1;
-        text-align: left;
-        width: 40%;
+    position: absolute;
+    top: 20%;
+    left: -55%;
+    font-size: 3.5rem;
+    font-weight: 900; /* Makes text extra bold */
+    color: rgba(255, 255, 255, 1); /* Full white text */
+    text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.6); /* Stronger shadow for thickness */
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.7); /* Black outline around text */
+    z-index: -1;
+    text-align: left;
+    width: 40%;
+
     }}
 
     h1 {{
