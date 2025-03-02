@@ -1,3 +1,4 @@
+
 import streamlit as st
 import google.generativeai as genai  # Google Gemini API
 import pandas as pd  # Pandas for career Q&A data handling
@@ -21,20 +22,30 @@ def load_career_qa():
 
 career_qa = load_career_qa()
 
-# ✅ Apply Custom Styling for Background Image with Gradient Overlay
+# ✅ Apply Custom Styling for Background Image with Transparent Gradient Overlay
 st.markdown(
     """
     <style>
     .stApp {
-        background: linear-gradient(to right, rgba(30, 144, 255, 0.6), rgba(50, 205, 50, 0.6), rgba(255, 20, 147, 0.6)),
-                    url('background.jpg') no-repeat center center fixed;
-        background-blend-mode: overlay;
+        background: url('think.jpg') no-repeat center center fixed;
         background-size: cover;
         color: white;
+        position: relative;
+    }
+    
+    .stApp::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(30, 144, 255, 0.3), rgba(50, 205, 50, 0.3), rgba(255, 20, 147, 0.3));
+        z-index: -1;
     }
     
     .main {
-        background-color: rgba(255, 255, 255, 0.85);
+        background-color: rgba(255, 255, 255, 0.75);
         padding: 20px;
         border-radius: 15px;
         box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
@@ -53,9 +64,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-# ✅ Display Background Image in Streamlit
-st.image("question mark.jpg", use_column_width=True)
 
 # ✅ Display Student Image (Use Local Image or URL)
 st.image("student.jpg", width=250)  # Ensure "student.jpg" is in your project folder
@@ -87,6 +95,5 @@ if st.button("Get Answer"):
         st.warning("Please enter a question.")
 
 # ✅ Run this script with: streamlit run app.py
-
 
    
