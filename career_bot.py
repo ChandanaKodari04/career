@@ -59,7 +59,7 @@ st.markdown(
 )
 
 # ✅ Display Multiple Images (Ensure they exist in your project folder)
-st.image(["student1.jpg", "student2.jpg", "student3.jpg"], width=250)  # Ensure these images exist
+st.image(["think.jpg", "student.jpg", "question mark.jpg"], width=250)  # Ensure these images exist
 
 # ✅ App Title & Description
 st.title("🤖 AI Career Guidance")
