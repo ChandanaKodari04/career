@@ -3,7 +3,7 @@ import google.generativeai as genai  # Google Gemini API
 import pandas as pd  # Pandas for career Q&A data handling
 
 # ✅ Configure Gemini API
-API_KEY = ""  # Replace with your actual API key
+API_KEY = "AIzaSyC1sJ_aHUIsdVumIhkYE5pCTlecWewwhXc"  # Replace with your actual API key
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
