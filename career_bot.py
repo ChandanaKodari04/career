@@ -83,7 +83,7 @@ st.markdown(
         opacity: 1;
     }}
     </style>
-    <div class="background-text">Build Your Career Now</div>
+    <div class="background-text">"Your Future is Created by What You Do Today"</div>
     """,
     unsafe_allow_html=True
 )
