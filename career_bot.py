@@ -26,7 +26,7 @@ st.markdown(
     """
     <style>
     body {
-        background: url('background.jpg') no-repeat center center fixed, 
+        background: url('question mark.jpg') no-repeat center center fixed, 
                     linear-gradient(to right, rgba(30, 144, 255, 0.6), rgba(50, 205, 50, 0.6), rgba(255, 20, 147, 0.6));
         background-blend-mode: overlay;
         background-size: cover;
