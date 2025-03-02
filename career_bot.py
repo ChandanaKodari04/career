@@ -1,5 +1,5 @@
-import streamlit as st
-import random
+
+   import streamlit as st
 import google.generativeai as genai  # Google Gemini API
 import pandas as pd  # Pandas for career Q&A data handling
 
@@ -18,28 +18,11 @@ if "messages" not in st.session_state:
 # ✅ Load Career Q&A Data (If Available)
 @st.cache_data
 def load_career_qa():
-    return pd.read_csv("career_q&a.csv")  # Ensure career_q&a.csv is in your project
+    return pd.read_csv("career_q&a.csv")  # Ensure career_qa.csv is in your project
 
 career_qa = load_career_qa()
 
-# ✅ Career Quotes List
-career_quotes = [
-    "Build Your Career Now",
-    "Your Future is Created by What You Do Today",
-    "Dream Big, Work Hard, Stay Focused",
-    "Success Begins with a Single Step",
-    "Do What You Love, Love What You Do",
-    "The Best Way to Predict Your Future is to Create It",
-    "Opportunities Don’t Happen, You Create Them",
-    "Your Career is Your Story – Make it Worth Telling",
-    "Success is the Sum of Small Efforts Repeated Daily",
-    "Believe in Yourself and Your Career Will Follow"
-]
-
-# ✅ Select a Random Quote for Background
-selected_quote = random.choice(career_quotes)
-
-# ✅ Apply Custom Styling with Background Quote
+# ✅ Apply Custom Styling with Spacing and Centered Content
 st.markdown(
     f"""
     <style>
@@ -57,12 +40,12 @@ st.markdown(
 
     .background-text {{
         position: absolute;
-        top: 30%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: bold;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(255, 255, 255, 0.3);
         text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
         z-index: -1;
         width: 100%;
@@ -78,6 +61,11 @@ st.markdown(
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         width: 50%;
         text-align: center;
+    }}
+
+    .stTextInput, .stButton {{
+        margin-top: 15px;
+        margin-bottom: 15px;
     }}
 
     .stButton button {{
@@ -96,7 +84,7 @@ st.markdown(
         background-color: #1a5bcc;
     }}
     </style>
-    <div class="background-text">{selected_quote}</div>
+    <div class="background-text">Build Your Career Now</div>
     """,
     unsafe_allow_html=True
 )
