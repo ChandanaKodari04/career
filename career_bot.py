@@ -25,9 +25,14 @@ career_qa = load_career_qa()
 st.markdown(
     """
     <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
     body {
-        background: url('think.jpg') no-repeat center center fixed, 
-                    linear-gradient(to right, rgba(30, 144, 255, 0.6), rgba(50, 205, 50, 0.6), rgba(255, 20, 147, 0.6));
+        background: linear-gradient(to right, rgba(30, 144, 255, 0.6), rgba(50, 205, 50, 0.6), rgba(255, 20, 147, 0.6)),
+                    url('think.jpg') no-repeat center center fixed;
         background-blend-mode: overlay;
         background-size: cover;
         color: white;
@@ -54,7 +59,7 @@ st.markdown(
 )
 
 # ✅ Display Multiple Images (Ensure they exist in your project folder)
-#st.image(["student1.jpg", "student2.jpg", "student3.jpg"], width=250)  # Ensure these images exist
+st.image(["student1.jpg", "student2.jpg", "student3.jpg"], width=250)  # Ensure these images exist
 
 # ✅ App Title & Description
 st.title("🤖 AI Career Guidance")
