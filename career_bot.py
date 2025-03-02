@@ -4,8 +4,16 @@ import pandas as pd  # Pandas for career Q&A data handling
 
 # ✅ Configure Gemini API
 API_KEY = "AIzaSyC1sJ_aHUIsdVumIhkYE5pCTlecWewwhXc"  # Replace with your actual API key
-genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
+if not API_KEY:
+    st.error("⚠ Please provide a valid Google Gemini API key.")
+else:
+    genai.configure(api_key=API_KEY)
+
+# ✅ Initialize Gemini AI Model
+try:
+    model = genai.GenerativeModel("gemini-1.5-flash")
+except Exception as e:
+    st.error(f"⚠ Error initializing AI Model: {str(e)}")
 
 # ✅ Store chat history
 if "chat" not in st.session_state:
@@ -17,11 +25,29 @@ if "messages" not in st.session_state:
 # ✅ Load Career Q&A Data (If Available)
 @st.cache_data
 def load_career_qa():
-    return pd.read_csv("career_q&a.csv")  # Ensure career_qa.csv is in your project
+    try:
+        return pd.read_csv("career_q&a.csv")  # Ensure career_q&a.csv exists
+    except FileNotFoundError:
+        st.warning("⚠ Career Q&A data file not found.")
+        return None
 
 career_qa = load_career_qa()
 
-# ✅ Apply Custom Styling with Side Background Text
+# ✅ Function to Get AI Response
+def generate_ai_response(question):
+    """Generate a career guidance response using Google Gemini AI."""
+    try:
+        if not API_KEY:
+            return "⚠ API Key is missing. Please configure it properly."
+
+        response = st.session_state.chat.send_message(question)
+        return response.text  # Extract and return AI response
+
+    except Exception as e:
+        st.error(f"⚠ API Request Failed: {str(e)}")  # Display error message
+        return "⚠ Sorry, an error occurred while fetching the response."
+
+# ✅ Apply Custom Styling
 st.markdown(
     f"""
     <style>
@@ -39,8 +65,8 @@ st.markdown(
     }}
 
     .background-text {{
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2); /* Black outline around text */;
-     position: absolute;
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+        position: absolute;
         top: 20%;
         left: -55%;
         font-size: 3.5rem;
@@ -50,7 +76,6 @@ st.markdown(
         z-index: -1;
         text-align: left;
         width: 40%;
-
     }}
 
     h1 {{
@@ -96,15 +121,6 @@ st.write("AI just helps you see the best path forward. Keep learning and growing
 # ✅ User Input
 user_input = st.text_input("Enter your career-related question:")
 
-# ✅ Function to Get AI Response
-def generate_ai_response(question):
-    """Generate response using Google Gemini AI."""
-    try:
-        response = st.session_state.chat.send_message(question)
-        return response.text
-    except Exception as e:
-        return f"⚠ Error: {str(e)}"
-
 # ✅ Handle User Query
 if st.button("Get Answer"):
     if user_input:
@@ -113,6 +129,4 @@ if st.button("Get Answer"):
         st.write("🤖 AI Response:")
         st.success(ai_response)
     else:
-        st.warning("Please enter a question.")
-
-# ✅ Run this script with: streamlit run app.py
+        st.warning("⚠ Please enter a question.")
