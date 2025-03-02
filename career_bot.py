@@ -90,7 +90,7 @@ st.markdown(
 )
 
 # ✅ App Title & Description
-st.title("🚀 AI Career Navigator")
+st.title("🤖 AI Career Navigator")
 st.write("AI just helps you see the best path forward. Keep learning and growing.")
 
 # ✅ User Input
