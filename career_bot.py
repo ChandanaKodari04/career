@@ -69,7 +69,7 @@ st.markdown(
         position: absolute;
         top: 20%;
         left: -55%;
-        font-size: 4rem;
+        font-size: 3.8rem;
         font-weight: bold;
         color: rgba(255, 255, 255, 1);
         text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9);
