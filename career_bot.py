@@ -65,14 +65,14 @@ st.markdown(
     }}
 
     .background-text {{
-        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
         position: absolute;
         top: 20%;
         left: -55%;
-        font-size: 3.5rem;
+        font-size: 4rem;
         font-weight: bold;
         color: rgba(255, 255, 255, 1);
-        text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
+        text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9);
         z-index: -1;
         text-align: left;
         width: 40%;
