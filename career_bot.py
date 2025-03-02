@@ -39,7 +39,7 @@ st.markdown(
     }}
 
     .background-text {{
-        position: absolute;
+       /* position: absolute;
         top: -50%;
         left: 15%;  /* Move text to the left side */
         transform: translateY(-100%);
@@ -49,7 +49,17 @@ st.markdown(
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
         width: 30%;
         text-align: right;
+        z-index: -1;*/
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
         z-index: -1;
+        text-align: left;
+        width: 40%;
     }}
 
     h1 {{
