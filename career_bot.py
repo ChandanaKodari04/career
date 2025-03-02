@@ -38,10 +38,10 @@ st.markdown(
     }}
     body {{
         background: linear-gradient(to right, rgba(30, 144, 255, 0.6), rgba(50, 205, 50, 0.6), rgba(255, 20, 147, 0.6)),
-                    url('{background_image}') no-repeat center center fixed;
+                    url('{background_image}') repeat center center fixed;
         background-blend-mode: overlay;
         background-size: cover;
-        color: white;
+        color: green;
     }}
     .main {{
         background-color: rgba(255, 255, 255, 0.85);
@@ -54,8 +54,8 @@ st.markdown(
         text-align: center;
     }}
     .stButton button {{
-        background-color: #2575fc;
-        color: white;
+        background-color: #2575gd;
+        color: blue;
         border-radius: 10px;
         padding: 10px;
     }}
