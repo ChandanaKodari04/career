@@ -46,7 +46,7 @@ st.markdown(
         font-size: 3.5rem;
         font-weight: bold;
         color: rgba(255, 255, 255, 0.9);
-        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         z-index: -1;
         text-align: left;
         width: 40%;
@@ -89,8 +89,8 @@ st.markdown(
 )
 
 # ✅ App Title & Description
-st.title("🤖 AI Career Guidance")
-st.write("Get AI-powered career advice instantly!")
+st.title("🚀 AI Career Navigator")
+st.write("AI just helps you see the best path forward. Keep learning and growing.")
 
 # ✅ User Input
 user_input = st.text_input("Enter your career-related question:")
