@@ -27,7 +27,7 @@ st.markdown(
     <style>
     .stApp {
         background: linear-gradient(to right, rgba(30, 144, 255, 0.6), rgba(50, 205, 50, 0.6), rgba(255, 20, 147, 0.6)),
-                    url('think.jpg') no-repeat center center fixed;
+                    url('background.jpg') no-repeat center center fixed;
         background-blend-mode: overlay;
         background-size: cover;
         color: white;
@@ -53,6 +53,9 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+# ✅ Display Background Image in Streamlit
+st.image("question mark.jpg", use_column_width=True)
 
 # ✅ Display Student Image (Use Local Image or URL)
 st.image("student.jpg", width=250)  # Ensure "student.jpg" is in your project folder
@@ -84,5 +87,6 @@ if st.button("Get Answer"):
         st.warning("Please enter a question.")
 
 # ✅ Run this script with: streamlit run app.py
+
 
    
