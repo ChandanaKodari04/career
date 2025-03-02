@@ -22,15 +22,12 @@ def load_career_qa():
 
 career_qa = load_career_qa()
 
-# ✅ Apply Custom Styling with Multiple Background Images
+# ✅ Apply Custom Styling with Pink and Blue Gradient Background and Opacity
 st.markdown(
     f"""
     <style>
     .stApp {{
-        background: url('think.jpg'), url('question mark.jpg'), url('student.jpg');
-        background-size: cover, cover, cover;
-        background-position: left, center, right;
-        background-repeat: no-repeat, no-repeat, no-repeat;
+        background: linear-gradient(135deg, rgba(255, 0, 150, 0.5), rgba(30, 144, 255, 0.5));
         color: white;
         position: relative;
         display: flex;
