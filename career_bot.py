@@ -1,4 +1,5 @@
 import streamlit as st
+import random
 import google.generativeai as genai  # Google Gemini API
 import pandas as pd  # Pandas for career Q&A data handling
 
@@ -17,17 +18,33 @@ if "messages" not in st.session_state:
 # ✅ Load Career Q&A Data (If Available)
 @st.cache_data
 def load_career_qa():
-    return pd.read_csv("career_q&a.csv")  # Ensure career_qa.csv is in your project
+    return pd.read_csv("career_q&a.csv")  # Ensure career_q&a.csv is in your project
 
 career_qa = load_career_qa()
 
-# ✅ Apply Custom Styling with Background Image
+# ✅ Career Quotes List
+career_quotes = [
+    "Build Your Career Now",
+    "Your Future is Created by What You Do Today",
+    "Dream Big, Work Hard, Stay Focused",
+    "Success Begins with a Single Step",
+    "Do What You Love, Love What You Do",
+    "The Best Way to Predict Your Future is to Create It",
+    "Opportunities Don’t Happen, You Create Them",
+    "Your Career is Your Story – Make it Worth Telling",
+    "Success is the Sum of Small Efforts Repeated Daily",
+    "Believe in Yourself and Your Career Will Follow"
+]
+
+# ✅ Select a Random Quote for Background
+selected_quote = random.choice(career_quotes)
+
+# ✅ Apply Custom Styling with Background Quote
 st.markdown(
     f"""
     <style>
     .stApp {{
-        background-image: url('think.jpg') no-repeat center center fixed;
-        background-size: cover;
+        background: linear-gradient(135deg, rgba(255, 0, 150, 0.6), rgba(30, 144, 255, 0.6));
         color: white;
         position: relative;
         height: 100vh;
@@ -38,34 +55,24 @@ st.markdown(
         text-align: center;
     }}
 
-    .overlay {{
-        background: rgba(0, 0, 0, 0.5);  /* Dark overlay for readability */
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }}
-
     .background-text {{
         position: absolute;
-        top: 40%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: bold;
         color: rgba(255, 255, 255, 0.9);
         text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-        z-index: 1;
+        z-index: -1;
         width: 100%;
         text-align: center;
     }}
 
     .content {{
         position: relative;
-        z-index: 2;
-        background: rgba(0, 0, 0, 0.6);
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.2);
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -89,8 +96,7 @@ st.markdown(
         background-color: #1a5bcc;
     }}
     </style>
-    <div class="overlay"></div>
-    <div class="background-text">Build Your Career Now</div>
+    <div class="background-text">{selected_quote}</div>
     """,
     unsafe_allow_html=True
 )
