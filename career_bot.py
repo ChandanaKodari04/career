@@ -1,7 +1,8 @@
 import streamlit as st
 import google.generativeai as genai  # Google Gemini API
 import pandas as pd  # Pandas for career Q&A data handling
-import os  # For checking file existence
+
+
 
 # ✅ Configure Gemini API
 API_KEY = "AIzaSyC1sJ_aHUIsdVumIhkYE5pCTlecWewwhXc"  # Replace with your actual API key
@@ -44,17 +45,17 @@ st.markdown(
         color: green;
     }}
     .main {{
-        background-color: rgba(255, 255, 255, 0.85);
+        background-color: rgba(223, 225, 245, 0.85);
         padding: 20px;
         border-radius: 15px;
         box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
     }}
     h1 {{
-        color: #ffffff;
+        color: #fhgfff;
         text-align: center;
     }}
     .stButton button {{
-        background-color: #2575gd;
+        background-color: #257jgd;
         color: blue;
         border-radius: 10px;
         padding: 10px;
