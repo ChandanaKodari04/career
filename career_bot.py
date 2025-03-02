@@ -1,4 +1,3 @@
-
 import streamlit as st
 import google.generativeai as genai  # Google Gemini API
 import pandas as pd  # Pandas for career Q&A data handling
@@ -26,34 +25,26 @@ career_qa = load_career_qa()
 st.markdown(
     """
     <style>
-    .stApp {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
         background: url('think.jpg') no-repeat center center fixed;
         background-size: cover;
-        color: white;
-        position: relative;
     }
     
-    .stApp::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to right, rgba(30, 144, 255, 0.3), rgba(50, 205, 50, 0.3), rgba(255, 20, 147, 0.3));
-        z-index: -1;
-    }
-    
-    .main {
-        background-color: rgba(255, 255, 255, 0.75);
+    .stApp {
+        background: rgba(255, 255, 255, 0.2); /* Transparent overlay */
         padding: 20px;
         border-radius: 15px;
         box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
     }
+    
     h1 {
         color: #ffffff;
         text-align: center;
     }
+    
     .stButton button {
         background-color: #2575fc;
         color: white;
@@ -95,5 +86,3 @@ if st.button("Get Answer"):
         st.warning("Please enter a question.")
 
 # ✅ Run this script with: streamlit run app.py
-
-   
