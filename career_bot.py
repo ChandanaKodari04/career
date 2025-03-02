@@ -40,9 +40,9 @@ st.markdown(
 
     .background-text {{
         position: absolute;
-        top: 100%;
+        top: -50%;
         left: 15%;  /* Move text to the left side */
-        transform: translateY(-50%);
+        transform: translateY(-100%);
         font-size: 3rem;
         font-weight: bold;
         color: rgba(255, 255, 255, 0.7);
