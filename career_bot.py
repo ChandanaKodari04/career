@@ -21,12 +21,12 @@ def load_career_qa():
 
 career_qa = load_career_qa()
 
-# ✅ Apply Custom Styling with Background Quote
+# ✅ Apply Custom Styling with Full-Screen Background Quote
 st.markdown(
     f"""
     <style>
     .stApp {{
-        background: linear-gradient(135deg, rgba(255, 0, 150, 0.5), rgba(30, 144, 255, 0.5));
+        background: linear-gradient(135deg, rgba(255, 0, 150, 0.6), rgba(30, 144, 255, 0.6));
         color: white;
         position: relative;
         display: flex;
@@ -34,23 +34,26 @@ st.markdown(
         justify-content: center;
         height: 100vh;
         text-align: center;
+        overflow: hidden;
     }}
 
     .background-text {{
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: bold;
-        color: rgba(255, 255, 255, 0.8);
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        width: 100%;
+        text-align: center;
         z-index: -1;
     }}
 
     h1 {{
-        color: white;
-        text-align: center;
+        position: relative;
+        z-index: 10;
     }}
 
     .stButton button {{
@@ -58,6 +61,7 @@ st.markdown(
         color: white;
         border-radius: 10px;
         padding: 10px;
+        font-size: 1rem;
         position: relative;
         overflow: hidden;
     }}
