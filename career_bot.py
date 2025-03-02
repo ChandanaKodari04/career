@@ -27,12 +27,12 @@ st.markdown(
     <style>
     .stApp {{
         background: linear-gradient(135deg, rgba(255, 0, 150, 0.6), rgba(30, 144, 255, 0.6));
-        color: white;
+        color: pinkish blue;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+        height: 110vh;
         text-align: center;
         overflow: hidden;
     }}
@@ -42,7 +42,7 @@ st.markdown(
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 4rem;
+        font-size: 5rem;
         font-weight: bold;
         color: rgba(255, 255, 255, 0.9);
         text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
