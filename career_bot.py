@@ -48,7 +48,7 @@ st.markdown(
         color: rgba(255, 255, 255, 0.7);
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
         width: 30%;
-        text-align: left;
+        text-align: right;
         z-index: -1;
     }}
 
