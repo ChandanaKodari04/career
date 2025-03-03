@@ -53,7 +53,7 @@ st.markdown(
     <style>
     .stApp {{
         background: linear-gradient(135deg, rgba(255, 0, 150, 0.6), rgba(30, 144, 255, 0.6));
-        color: white;
+        color: rgba(255, 255, 255, 0.8);
         position: relative;
         display: flex;
         align-items: center;
