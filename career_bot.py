@@ -73,9 +73,8 @@ st.markdown(
         font-weight: bold;
         text-align: left;
         width: 40%;
-        
-       
-        color: rgba(255, 105, 180, 0.9);
+        color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
         border: 3px solid rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(15px);
 
