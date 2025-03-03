@@ -76,6 +76,9 @@ st.markdown(
         z-index: -1;
         text-align: left;
         width: 40%;
+        background: linear-gradient(135deg, rgba(255, 105, 180, 0.4), rgba(30, 144, 255, 0.4)); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         
     }}
 
