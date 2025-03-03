@@ -76,8 +76,8 @@ st.markdown(
         
         color: #DDA0DD; /* Bluish Pink (Light Purple-Pink) */
          text-shadow: 
-                text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.5);
-               -3px -3px 6px rgba(255, 192, 203, 0.6); /* Blue & pink glow */
+                  4px 4px 10px rgba(0, 0, 255, 0.7), 
+                  4px 4px 10px rgba(255, 0, 0, 0.7); /* Blue & Red glow */
     }}
     h1 {{
         position: relative;
