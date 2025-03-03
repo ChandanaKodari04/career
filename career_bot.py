@@ -69,13 +69,12 @@ st.markdown(
         position: absolute;
         top: 10%;
         left: -55%;
-        font-size: 4rem;
+        font-size: 5rem;
         font-weight: bold;
         text-align: left;
         width: 40%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: 4px 4px 12px rgba(255, 105, 180, 0.8), 4px 4px 12px rgba(30, 144, 255, 0.8);
+        
+       
         color: rgba(255, 105, 180, 0.9);
         border: 3px solid rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(15px);
