@@ -75,17 +75,17 @@ st.markdown(
         z-index: -1;
         text-align: left;
         width: 40%;
-        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+       text-shadow: 5px 5px 15px rgba(255, 165, 0, 0.8), 5px 5px 20px rgba(255, 69, 0, 0.8);
+       color:none;
+       
         animation: glowing 2s infinite alternate;
         background: linear-gradient(135deg, rgba(255, 255, 0, 0.5), rgba(255, 69, 0, 0.5));
         
     }}
     @keyframes glowing {{
-        0% {{text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.6), 0px 0px 10px rgba(255, 69, 0, 0.6); }}
-        50% {{ text-shadow: 0px 0px 25px rgba(255, 255, 0, 0.9), 0px 0px 25px rgba(255, 69, 0, 0.9); }}
-        100% {{ text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.6), 0px 0px 10px rgba(255, 69, 0, 0.6); }}
+       0% {{ text-shadow: 2px 2px 10px rgba(255, 165, 0, 0.6), 2px 2px 10px rgba(255, 69, 0, 0.6); }}
+        50% {{ text-shadow: 5px 5px 20px rgba(255, 165, 0, 1), 5px 5px 20px rgba(255, 69, 0, 1); }}
+        100% {{ text-shadow: 2px 2px 10px rgba(255, 165, 0, 0.6), 2px 2px 10px rgba(255, 69, 0, 0.6); }}
     }}
 
     h1 {{
