@@ -77,18 +77,7 @@ st.markdown(
         width: 40%;
        text-shadow: 2px 2px 2px rgba(10, 10, 0, 0.8), 2px 2px 2px rgba(0, 0, 0, 0.8);
        color:none;
-       display: inline-block; /* Fixes the hidden background box issue */
-        white-space: nowrap
-        animation: glowing 0.5s infinite alternate;
-        
-        
     }}
-    @keyframes glowing {{
-       0% {{ text-shadow: 2px 2px 10px rgba(255, 165, 0, 0.6), 2px 2px 10px rgba(255, 69, 0, 0.6); }}
-        50% {{ text-shadow: 5px 5px 20px rgba(255, 165, 0, 1), 5px 5px 20px rgba(255, 69, 0, 1); }}
-        100% {{ text-shadow: 2px 2px 10px rgba(255, 165, 0, 0.6), 2px 2px 10px rgba(255, 69, 0, 0.6); }}
-    }}
-
     h1 {{
         position: relative;
         z-index: 10;
