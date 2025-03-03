@@ -76,7 +76,9 @@ st.markdown(
         
         
         color: rgba(138, 43, 226, 0.8); /* Bluish Red (Mix of Blue-Violet & Red) */
-        text-shadow: 3px 3px 8px rgba(255, 69, 0, 0.9); /* Reddish-Orange Shadow */
+         text-shadow: 
+                4px 4px 0px rgba(255, 69, 0, 1), /* Solid reddish shadow */
+                8px 8px 10px rgba(255, 69, 0, 0.8); /* Soft glowing effect */
 
     }}
     h1 {{
