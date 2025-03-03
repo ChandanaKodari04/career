@@ -73,7 +73,7 @@ st.markdown(
         font-weight: bold;
         text-align: left;
         width: 40%;
-        backdrop-filter: blur(10px);
+        
         
         color: rgba(138, 43, 226, 0.8); /* Bluish Red (Mix of Blue-Violet & Red) */
         text-shadow: 3px 3px 8px rgba(255, 69, 0, 0.9); /* Reddish-Orange Shadow */
