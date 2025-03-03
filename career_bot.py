@@ -65,7 +65,7 @@ st.markdown(
     }}
 
     .background-text {{
-        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+        
         position: absolute;
         top: 10%;
         left: -55%;
