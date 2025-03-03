@@ -80,7 +80,7 @@ st.markdown(
        display: inline-block; /* Fixes the hidden background box issue */
         white-space: nowrap
         animation: glowing 0.5s infinite alternate;
-        background: linear-gradient(135deg, rgba(255, 255, 0, 0.5), rgba(255, 69, 0, 0.5));
+        
         
     }}
     @keyframes glowing {{
