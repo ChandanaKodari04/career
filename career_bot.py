@@ -71,8 +71,8 @@ st.markdown(
         left: -55%;
         font-size: 3.7rem;
         font-weight: bold;
-        color: rgba(255, 255, 255, 0.8);
-        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        color: rgba(255, 255, 255, 0.2); /* Transparent effect */
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
         z-index: -1;
         text-align: left;
         width: 40%;
