@@ -74,8 +74,9 @@ st.markdown(
         text-align: left;
         width: 40%;
         backdrop-filter: blur(10px);
-        color: rgba(100, 149, 237, 0.8); /* Slightly deeper blue for clarity */
-        text-shadow: 3px 3px 6px rgba(255, 20, 147, 0.8); /* Sharper pink shadow */
+        
+        color: rgba(138, 43, 226, 0.8); /* Bluish Red (Mix of Blue-Violet & Red) */
+        text-shadow: 3px 3px 8px rgba(255, 69, 0, 0.9); /* Reddish-Orange Shadow */
 
     }}
     h1 {{
