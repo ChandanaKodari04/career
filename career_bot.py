@@ -74,10 +74,10 @@ st.markdown(
         text-align: left;
         width: 40%;
         
-        color: #DDA0DD; /* Bluish Pink (Light Purple-Pink) */
-         text-shadow: 
-                  4px 4px 10px rgba(0, 0, 255, 0.7), 
-                  4px 4px 10px rgba(255, 0, 0, 0.7); /* Blue & Red glow */
+         color: rgba(138, 43, 226, 1); /* Bluish-Red (Strong visibility) */
+            text-shadow: 
+                4px 4px 0px rgba(255, 69, 0, 1), /* Solid reddish shadow */
+                8px 8px 10px rgba(255, 69, 0, 0.8); /* Soft glowing effect */
     }}
     h1 {{
         position: relative;
