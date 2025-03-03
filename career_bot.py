@@ -75,7 +75,7 @@ st.markdown(
         z-index: -1;
         text-align: left;
         width: 40%;
-       text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+       text-shadow: 2px 2px 2px rgba(10, 10, 0, 0.8);
        color:none;
        display: inline-block; /* Fixes the hidden background box issue */
         white-space: nowrap
