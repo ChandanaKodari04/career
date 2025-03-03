@@ -73,6 +73,7 @@ st.markdown(
         font-weight: bold;
         text-align: left;
         width: 40%;
+         transform: translate(-50%, -50%);
     }}
     h1 {{
         position: relative;
