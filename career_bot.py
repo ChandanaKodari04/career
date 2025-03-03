@@ -69,18 +69,23 @@ st.markdown(
         position: absolute;
         top: 10%;
         left: -55%;
-        font-size: 3.7rem;
+        font-size: 4rem;
         font-weight: bold;
         color: rgba(255, 255, 255, 0.2); /* Transparent effect */
-        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
         z-index: -1;
         text-align: left;
         width: 40%;
-        background: linear-gradient(135deg, rgba(255, 105, 180, 0.4), rgba(30, 144, 255, 0.4)); 
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation: glowing 2s infinite alternate;
+        background: linear-gradient(135deg, rgba(255, 255, 0, 0.5), rgba(255, 69, 0, 0.5));
         
-    }}
+    }@keyframes glowing {
+        0% { text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.6), 0px 0px 10px rgba(255, 69, 0, 0.6); }
+        50% { text-shadow: 0px 0px 25px rgba(255, 255, 0, 0.9), 0px 0px 25px rgba(255, 69, 0, 0.9); }
+        100% { text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.6), 0px 0px 10px rgba(255, 69, 0, 0.6); }
+    }
 
     h1 {{
         position: relative;
