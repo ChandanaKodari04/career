@@ -73,7 +73,15 @@ st.markdown(
         font-weight: bold;
         text-align: left;
         width: 40%;
-         transform: translate(-50%, -50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 4px 4px 12px rgba(255, 105, 180, 0.8), 4px 4px 12px rgba(30, 144, 255, 0.8);
+        color: rgba(255, 105, 180, 0.9);
+        border: 3px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(15px);
+
+
+
     }}
     h1 {{
         position: relative;
@@ -106,7 +114,7 @@ st.markdown(
         opacity: 1;
     }}
     </style>
-    <div class="background-text">"The Best Way to Predict Your Future is to Create It..."</div>
+    <div class="background-text">"BUILD YOUR CAREER NOW.."</div>
     """,
     unsafe_allow_html=True
 )
