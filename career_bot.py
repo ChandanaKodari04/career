@@ -73,7 +73,7 @@ st.markdown(
         font-weight: bold;
         text-align: left;
         width: 40%;
-        backdrop-filter: blur(15px);
+        backdrop-filter: blur(10px);
         color: rgba(100, 149, 237, 0.8); /* Slightly deeper blue for clarity */
         text-shadow: 3px 3px 6px rgba(255, 20, 147, 0.8); /* Sharper pink shadow */
 
