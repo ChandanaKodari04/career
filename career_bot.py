@@ -74,7 +74,7 @@ st.markdown(
         text-align: left;
         width: 40%;
         backdrop-filter: blur(15px);
-        color: rgba(173, 216, 230, 0.6); /* Pinkish-blue transparent */
+        color: rgba(173, 216, 230, 0.5); /* Pinkish-blue transparent */
         text-shadow: 5px 5px 10px rgba(255, 20, 147, 0.6); /* Pink shadow */
 
 
