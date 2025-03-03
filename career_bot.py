@@ -72,10 +72,11 @@ st.markdown(
         font-size: 3.7rem;
         font-weight: bold;
         color: rgba(255, 255, 255, 1);
-        text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9);
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
         z-index: -1;
         text-align: left;
         width: 40%;
+        transform: translate(-50%, -50%);
     }}
 
     h1 {{
