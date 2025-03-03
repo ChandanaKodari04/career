@@ -77,8 +77,9 @@ st.markdown(
         width: 40%;
        text-shadow: 5px 5px 15px rgba(255, 165, 0, 0.8), 5px 5px 20px rgba(255, 69, 0, 0.8);
        color:none;
-       
-        animation: glowing 2s infinite alternate;
+       display: inline-block; /* Fixes the hidden background box issue */
+        white-space: nowrap
+        animation: glowing 0.5s infinite alternate;
         background: linear-gradient(135deg, rgba(255, 255, 0, 0.5), rgba(255, 69, 0, 0.5));
         
     }}
