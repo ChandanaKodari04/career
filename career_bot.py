@@ -69,14 +69,13 @@ st.markdown(
         position: absolute;
         top: 10%;
         left: -55%;
-        font-size: 5rem;
+        font-size: 6rem;
         font-weight: bold;
         text-align: left;
         width: 40%;
-        color: rgba(255, 255, 255, 0.8);
-        border: 3px solid rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(15px);
-
+        color: rgba(173, 216, 230, 0.6); /* Pinkish-blue transparent */
+        text-shadow: 5px 5px 10px rgba(255, 20, 147, 0.6); /* Pink shadow */
 
 
     }}
