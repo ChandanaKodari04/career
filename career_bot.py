@@ -74,10 +74,9 @@ st.markdown(
         text-align: left;
         width: 40%;
         
-        
-        color: rgba(138, 43, 226, 0.8); /* Bluish Red (Mix of Blue-Violet & Red) */
+        color: #DDA0DD; /* Bluish Pink (Light Purple-Pink) */
          text-shadow: 
-                4px 4px 0px rgba(255, 69, 0, 1), /* Solid reddish shadow */
+                text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.5);
                 8px 8px 10px rgba(255, 69, 0, 0.8); /* Soft glowing effect */
 
     }}
