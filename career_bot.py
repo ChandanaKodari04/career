@@ -81,11 +81,12 @@ st.markdown(
         animation: glowing 2s infinite alternate;
         background: linear-gradient(135deg, rgba(255, 255, 0, 0.5), rgba(255, 69, 0, 0.5));
         
-    }@keyframes glowing {
+    }}
+    @keyframes glowing {{
         0% { text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.6), 0px 0px 10px rgba(255, 69, 0, 0.6); }
         50% { text-shadow: 0px 0px 25px rgba(255, 255, 0, 0.9), 0px 0px 25px rgba(255, 69, 0, 0.9); }
         100% { text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.6), 0px 0px 10px rgba(255, 69, 0, 0.6); }
-    }
+    }}
 
     h1 {{
         position: relative;
