@@ -71,12 +71,12 @@ st.markdown(
         left: -55%;
         font-size: 3.7rem;
         font-weight: bold;
-        color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 0.8);
         text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
         z-index: -1;
         text-align: left;
         width: 40%;
-        transform: translate(-50%, -50%);
+        
     }}
 
     h1 {{
